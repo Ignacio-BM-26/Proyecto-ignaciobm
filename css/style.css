@@ -9,6 +9,9 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #212121ff;
     color: lightcyan;
     
@@ -21,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px 20px;
     background-color: #212121ff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -33,6 +36,7 @@ header {
 
 .logo-container img {
     width: 100px;
+    height: auto;
 }
 
 /* Navbar a la derecha */
@@ -62,33 +66,72 @@ header {
 }
 
 /* =============================
-   estilos del main
+   estilos del main index
    ============================= */
 .main-index {
-    text-align: center;
-    background-color: #212121ff;
     display: flex;
+    flex-wrap: wrap;
+    background-color: #212121ff;
+    padding: 20px;
     gap: 20px;
     margin-top: 20px;
 }
 
-main img {
-    display: flow-root;
-    width: 200px;
-    padding-left: 20px;
+.primerimagen img {
+    max-width: 30%;
+    height: auto;
 }
 
-div p {
-    display: flex;
-    text-align: left;
-    font-size: 20px;
-    width: 35%;
-}
-.Gorra-nike {
-    width: 300px;
+.descripcion-principal {
+    flex: 1 1 100%;
+    padding: 10px;
 }
 
-.titulo-nos {
+/*===================
+ estilos mobile main
+ ==================== */
+ @media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-index {
+        flex-direction: column;
+    }
+
+    .descripcion-principal {
+        text-align: center;
+    }
+
+    .primerimagen {
+        text-align: center;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* ======================
+estilos main para tablet 
+========================= */
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+    }
+
+    .scroll-link a {
+        font-size: 14px;
+    }
+}
+
+/* =====================
+   estilos nosotros.html
+   ===================== */
+
+   .titulo-nos {
     margin: 20px;
     gap: 20px;
     border: #ccc;
@@ -104,6 +147,12 @@ div p {
     gap: 40px;
 }
 
+/* ================ 
+   Estilos Contactos 
+   ================ */
+   main fieldset div {
+    text-align: center;
+}
 
 /*=====================================
  estilos para el formulario de contacto
@@ -180,13 +229,6 @@ input[type="submit"], input[type="reset"] {
     margin-right: 10px;
 }
 
-/* ================ 
-   Estilos Contactos 
-   ================ */
-main fieldset div {
-    text-align: center;
-}
-
 /* =============================
    Estilos carrito
    ============================= */
@@ -203,28 +245,33 @@ main fieldset div {
     text-align: center;
 }
 
+
 /* =============================
    Estilos imagenes de productos
    ============================= */
-   .contenedordeimagenes {
-    background-color:#212121ff;
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-    width: 75%;
-    margin: 0 auto;
+.main-prod {
+    text-align: center;
+    padding: 20px;
 }
 
-.gorra-vintagerosa,
-.gorra-vintage2,
-.gorra-vintage3 {
+.contenedordeimagenes {
+    background-color:#212121ff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.contenedordeimagenes div {
+    flex: 1 1 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
+}
+
+.contenedordeimagenes img {
+    max-width: 100%;
+    height: auto;
 }
 
 .recomendados-prod {
@@ -235,6 +282,46 @@ main fieldset div {
     text-align: center;
     margin-bottom: 10px;
 }
+/* estilos para tablets */
+@media (max-width: 1024px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contenedordeimagenes div {
+        flex: 1 1 45%;
+    }
+
+    .contenedordeimagenes img {
+        max-width: 90%;
+    }
+}
+
+/* estilos para moviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedordeimagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedordeimagenes div {
+        flex: 1 1 100%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
 
 
 /* =============================
@@ -244,6 +331,7 @@ footer {
     background-color: #212121ff;
     text-align: center;
     font-weight: lighter;
+    padding: 20px;
 }
 
 footer a {
