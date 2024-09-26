@@ -1,0 +1,46 @@
+
+// Estilos Imágenes de Productos 
+   .main-prod {
+    text-align: center;
+    padding: 20px;
+
+    .contenedordeimagenes {
+        background-color: $background-color;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+
+        div {
+            flex: 1 1 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                max-width: 80%;
+                height: auto;
+                margin-bottom: 8%; 
+            }
+
+            h2 {
+                margin-top: 10px;
+                color: $text-color;
+                text-align: center;
+                
+            }
+            .agregar-carrito {
+                margin-top: 8px;
+                padding: 10px 15px;
+                background-color: $primary-color;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;}
+                
+        }
+    }
+}
+
+

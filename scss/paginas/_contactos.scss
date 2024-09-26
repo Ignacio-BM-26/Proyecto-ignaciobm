@@ -1,0 +1,79 @@
+// estilos contactos
+   .main-contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 50%;
+    background-color: #333030;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+        color: lightcyan;
+    }
+
+    form {
+        width: 100%;
+        
+        fieldset {
+            border: none;
+            padding: 0;
+
+            .input-nombre, 
+            .input-email, 
+            .cuadro-texto {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            label {
+                display: block;
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: $text-color;
+            }
+
+            input[type="text"], 
+            input[type="email"], 
+            textarea {
+                width: 100%;
+                padding: 10px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            textarea {
+                resize: none;
+            }
+
+            input[type="submit"], 
+            input[type="reset"] {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: $primary-color;
+                color: $primary-color;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $secondary-color;
+                }
+            }
+
+            input[type="submit"] {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+fieldset div {
+    text-align: center;
+}

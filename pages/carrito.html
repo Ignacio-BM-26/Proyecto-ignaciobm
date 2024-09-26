@@ -54,16 +54,36 @@
        </div>
    </header>
     
-   <main class="main-carro">
-        <h3 class="Productos-agregados">
-            Productos agregados
-        </h3>
-        <div class="contenedor-carro">
-            <img src="../img/Gorra-vintage3" alt="gorra-vintage3">
-            <p class="descripcion-carrito">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam velit quos voluptatibus molestias at tempore ducimus maxime cupiditate neque nihil deserunt ad nobis quisquam exercitationem itaque amet, officiis reiciendis sunt!</p>
-        </div>
-        
-    </main>
+   <main>
+    <section class="carrito">
+        <h2 class="titulo-carrito">Tu Carrito</h2>
+        <div class="productos-carrito">
+            <div class="producto">
+                <img src="../img/remera-oversize-clara.jpg" alt="remera-oversize-clara" class="imagen-producto">
+                <div class="detalle-producto">
+                    <h3 class="nombre-producto">Remera oversize</h3>
+                    <p class="precio-producto">$25000</p>
+                    <input type="number" class="cantidad" value="1" min="1">
+                    <button class="boton-eliminar">Eliminar</button>
+                </div>
+            </div> 
+
+            <div class="producto">
+                <img src="../img/Gorra-vintagerosa.jpg" alt="Gorra rosa" class="imagen-producto">
+                <div class="detalle-producto">
+                    <h3 class="nombre-producto">Gorra Vintage Rosa</h3>
+                    <p class="precio-producto">$12000</p>
+                    <input type="number" class="cantidad" value="1" min="1">
+                    <button class="boton-eliminar">Eliminar</button>
+                </div>
+            </div> 
+        </div> 
+    </section>                
+              <div class="total-carrito">
+                     <p>Total: <span class="precio-total">$37000</span></p>
+                      <button class="boton-finalizar">Finalizar Compra</button>
+                </div>
+</main>
 
     <Footer>
         <p> Todos los derechos reservados</p>

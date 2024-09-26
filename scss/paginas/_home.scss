@@ -1,0 +1,113 @@
+//estilos header
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212121ff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .logo-container {
+        flex: 1;
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .navbar {
+        li {
+            margin-left: 20px;
+
+            a {
+                color: $text-color;
+                font-weight: bold;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .scroll-link {
+        a {
+            padding: 10px;
+            font-size: 14px;
+            color: lightcyan;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding-base;
+
+    // Título principal centrado
+    .titulo-principal {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: $text-color;
+    }
+
+    // Contenedor para gorras y remeras, con dos columnas
+    .contenido {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        gap: 20px; 
+        padding: 30px;
+
+        
+        .columna-remeras, .columna-gorras {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 20px;
+
+            
+            h2 {
+                text-align: center;
+                margin-bottom: 10px;
+                color: $text-color
+            }
+
+            
+            img {
+                max-width: 80%;
+                height: auto;
+                filter: grayscale(10%) brightness(0.8);
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+//estilos footer
+
+footer {
+    background-color: $background-color; 
+    text-align: center;
+    font-weight: lighter;
+    padding: 20px;
+    border-top: 2px solid lightcyan;}
+    
+    // Estilos para los enlaces dentro del footer
+    a {
+        color: $text-color; 
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+

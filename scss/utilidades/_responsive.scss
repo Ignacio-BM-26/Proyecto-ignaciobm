@@ -1,0 +1,479 @@
+// Breakpoints para tablet y mobile
+$tablet: 768px; // Tamaño estándar de tablet
+$mobile: 480px; // Tamaño estándar de móvil
+
+//responsive header
+header {
+    // Estilos generales
+
+    @media (max-width: $tablet) {
+        flex-direction: row; // Los elementos se apilan
+        justify-content: space-between;
+        padding: 15px;
+
+        .logo-container img {
+            width: 80px; // Ajusta el tamaño del logo
+        }
+
+        .navbar {
+            margin-top: 15px; // Ajusta el margen para los enlaces
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 10px;
+
+        .logo-container img {
+            width: 60px; 
+            
+        }
+
+        .navbar {
+            flex-direction: column;
+        }
+    }
+}
+
+//responsive home
+ @media (max-width: $tablet) {
+    .contenido {
+        flex-direction: column; // Apilar columnas
+        align-items: center; // Centrar columnas
+    }
+}
+
+@media (max-width: $mobile) { 
+
+    .titulo-principal {
+        font-size: 2rem; // Tamaño más pequeño del título
+        margin-bottom: 20px; // Menos margen
+    }
+
+    .contenido {
+        width: 100%; // Ancho completo
+        padding: 10px; // Menos padding
+
+        .columna-remeras, .columna-gorras {
+            width: 100%; // Ancho completo para columnas
+            align-items: center; // Centrar elementos
+        }
+    }
+}
+
+
+//responsive nosotros
+.titulo-nos {
+    margin: $margin-base;
+    text-align: center; 
+    font-size: 2.5rem;
+    color: $text-color;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 10px;
+
+
+    @media (max-width: $tablet) {
+        font-size: 2rem; 
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.5rem; 
+    }
+}
+
+.descripcion-nos {
+    background-color: rgb(34, 34, 34);
+    width: 80%;
+    display: grid;
+    place-items: center;
+    margin: 40px auto;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    padding: $padding-base;
+    color: $text-color;
+    line-height: 1.6;
+    font-size: 1.2rem;
+
+    // Efecto hover para fondo
+    &:hover {
+        background-color: rgb(45, 45, 45);
+        transition: background-color 0.3s;
+    }
+
+    
+    @media (max-width: $tablet) {
+        width: 90%; 
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: $mobile) {
+        width: 95%;
+        font-size: 1rem;
+    }
+}
+
+
+//responsive productos
+.main-prod {
+    text-align: center;
+    padding: 20px;
+
+    .contenedordeimagenes {
+        background-color: $background-color;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+
+        div {
+            flex: 1 1 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                max-width: 80%;
+                height: auto;
+                margin-bottom: 8%; 
+            }
+
+            h2 {
+                margin-top: 10px;
+                color: $text-color;
+                text-align: center;    
+            }
+
+            .agregar-carrito {
+                margin-top: 8px;
+                padding: 10px 15px;
+                background-color: $primary-color;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    
+    @media (max-width: $tablet) {
+        .contenedordeimagenes {
+            div {
+                flex: 1 1 45%; 
+            }
+        }
+    }
+
+    @media (max-width: $mobile) {
+        .contenedordeimagenes {
+            div {
+                flex: 1 1 100%; 
+            }
+
+            h2 {
+                font-size: 1.2rem; 
+            }
+
+            img {
+                max-width: 90%; 
+            }
+        }
+    }
+}
+
+//responsive contactos
+.main-contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 50%; 
+    background-color: #333030;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+        color: lightcyan;
+    }
+
+    form {
+        width: 100%;
+
+        fieldset {
+            border: none;
+            padding: 0;
+
+            .input-nombre, 
+            .input-email, 
+            .cuadro-texto {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            label {
+                display: block;
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: $text-color;
+            }
+
+            input[type="text"], 
+            input[type="email"], 
+            textarea {
+                width: 100%;
+                padding: 10px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            textarea {
+                resize: none;
+            }
+
+            input[type="submit"], 
+            input[type="reset"] {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: $primary-color;
+                color: white; 
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $secondary-color;
+                }
+            }
+
+            input[type="submit"] {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+fieldset div {
+    text-align: center;
+}
+
+
+@media (max-width: $tablet) {
+    .main-contactos {
+        width: 80%; 
+        margin: 30px auto; 
+    }
+}
+
+@media (max-width: $mobile) {
+    .main-contactos {
+        width: 95%; 
+        padding: 15px; 
+    }
+
+    h2 {
+        font-size: 20px; 
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    textarea {
+        padding: 8px; 
+    }
+
+    input[type="submit"], 
+    input[type="reset"] {
+        padding: 8px 15px; 
+    }
+}
+
+//responsive carrito
+.carrito {
+    padding: 20px;
+    background-color: $background-color;
+    color: $text-color;
+    border-radius: 10px;
+
+    .titulo-carrito {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        color: $text-color;
+    }
+
+    .productos-carrito {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;
+
+        .producto {
+            display: flex;
+            background-color: rgb(59, 56, 56);
+            padding: 15px;
+            border-radius: 5px;
+            align-items: center; 
+            justify-content: space-between;
+            width: 100%;
+
+            .imagen-producto {
+                max-width: 80px;
+                border-radius: 5px;
+                margin-right: 15px;
+            }
+
+            .detalle-producto {
+                flex: 1;
+
+                .nombre-producto {
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+
+                .precio-producto {
+                    font-size: 1.1rem;
+                    margin: 5px 0;
+                }
+
+                .cantidad {
+                    width: 60px;
+                    margin-right: 10px;
+                }
+
+                .boton-eliminar {
+                    background-color: red;
+                    color: white;
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: darkred;
+                    }
+                }
+            }
+        }
+    }
+
+    .total-carrito {
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px; 
+        margin-top: 10px; 
+        padding-top: 20px;
+        border-top: 1px solid lightcyan;
+        border-width: 2px;
+
+        .precio-total {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-right: 20px;
+        }
+
+        .boton-finalizar {
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+    }
+
+    // Responsive styles
+    @media (max-width: $tablet) {
+        padding: 15px;
+
+        .titulo-carrito {
+            font-size: 1.8rem;
+        }
+
+        .productos-carrito {
+            .producto {
+                flex-direction: column; // Cambia a una columna
+                align-items: flex-start; // Alinea los elementos a la izquierda
+                padding: 10px;
+
+                .imagen-producto {
+                    max-width: 60px; // Reduce el tamaño de la imagen
+                    margin: 0 0 10px 0; // Margen solo en la parte inferior
+                }
+
+                .detalle-producto {
+                    width: 100%; // Asegúrate de que el detalle ocupe el ancho completo
+                }
+            }
+        }
+
+        .total-carrito {
+            flex-direction: column; // Coloca los elementos en columna
+            align-items: flex-end; // Alinea los elementos a la derecha
+            margin: 20px 0;
+
+            .precio-total {
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 10px;
+
+        .titulo-carrito {
+            font-size: 1.5rem; // Más pequeño en móviles
+        }
+
+        .productos-carrito {
+            .producto {
+                padding: 8px; // Reduce el padding
+                flex-direction: column; // Cambia a columna
+
+                .imagen-producto {
+                    max-width: 50px; // Asegúrate de que la imagen sea más pequeña
+                }
+
+                .detalle-producto {
+                    .nombre-producto {
+                        font-size: 1rem; // Reduce el tamaño de fuente
+                    }
+
+                    .precio-producto {
+                        font-size: 0.9rem; // Reduce el tamaño de fuente
+                    }
+
+                    .cantidad {
+                        width: 40px; // Reduce el tamaño de la cantidad
+                    }
+                }
+            }
+        }
+
+        .total-carrito {
+            margin: 10px 0;
+
+            .precio-total {
+                font-size: 1.2rem; // Más pequeño
+            }
+
+            .boton-finalizar {
+                padding: 8px; // Reduce el padding
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
