@@ -53,9 +53,19 @@ header {
     // Título principal centrado
     .titulo-principal {
         text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 30px;
+        font-size: 3rem; // Hacerlo más grande que los otros títulos
+        margin-bottom: 20px;
         color: $text-color;
+    }
+
+    // Descripción inicial
+    .descripcion-inicial {
+        text-align: center;
+        font-size: 1.6rem; // Tamaño adecuado entre h1 y h2
+        font-style: italic;
+        color: $text-color;
+        margin-bottom: 40px; // Separar más del h1 y del contenido
+        width: 80%; // Ajuste de ancho para mantener un buen formato
     }
 
     // Contenedor para gorras y remeras, con dos columnas
@@ -66,21 +76,22 @@ header {
         gap: 20px; 
         padding: 30px;
 
-        
+        // Columnas de gorras y remeras
         .columna-remeras, .columna-gorras {
             display: flex;
             flex-direction: column;
             align-items: center; 
             gap: 20px;
 
-            
+            // Títulos secundarios (h2)
             h2 {
                 text-align: center;
+                font-size: 1.8rem; // Más grande que el texto normal, pero menor que el h1
                 margin-bottom: 10px;
-                color: $text-color
+                color: $text-color;
             }
 
-            
+            // Estilizar las imágenes
             img {
                 max-width: 80%;
                 height: auto;
@@ -90,7 +101,6 @@ header {
         }
     }
 }
-
 //estilos footer
 
 footer {
