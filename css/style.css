@@ -245,15 +245,19 @@ fieldset div {
   cursor: pointer;
 }
 
+.main-carrito {
+  margin-top: 5px;
+}
+
 .carrito {
   padding: 20px;
   background-color: #212121;
   color: lightcyan;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .carrito .titulo-carrito {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 2rem;
   color: lightcyan;
 }
