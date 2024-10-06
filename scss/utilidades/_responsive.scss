@@ -67,7 +67,7 @@ header {
     text-align: center; 
     font-size: 2.5rem;
     color: $text-color;
-    border-bottom: 2px solid aqua;
+    border-bottom: 2px solid #3A5A40;
     padding-bottom: 10px;
 
 
@@ -81,23 +81,17 @@ header {
 }
 
 .descripcion-nos {
-    background-color: rgb(34, 34, 34);
+    background-color: $primary-color;
     width: 80%;
     display: grid;
     place-items: center;
     margin: 40px auto;
-    border: 2px solid aqua;
+    border: 2px solid #3A5A40;
     border-radius: 10px;
     padding: $padding-base;
     color: $text-color;
     line-height: 1.6;
     font-size: 1.2rem;
-
-    // Efecto hover para fondo
-    &:hover {
-        background-color: rgb(45, 45, 45);
-        transition: background-color 0.3s;
-    }
 
     
     @media (max-width: $tablet) {
@@ -188,15 +182,16 @@ header {
     align-items: center;
     margin: 50px auto;
     width: 50%; 
-    background-color: #333030;
+    background-color: $primary-color;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
 
     h2 {
         margin-bottom: 20px;
         font-size: 24px;
         text-align: center;
-        color: lightcyan;
+        color: $text-color;
     }
 
     form {
@@ -239,7 +234,7 @@ header {
             input[type="reset"] {
                 margin-top: 20px;
                 padding: 10px 20px;
-                background-color: $primary-color;
+                background-color: #588157;
                 color: white; 
                 border: none;
                 border-radius: 5px;
@@ -312,7 +307,7 @@ fieldset div {
 
         .producto {
             display: flex;
-            background-color: rgb(59, 56, 56);
+            background-color: $primary-color;
             padding: 15px;
             border-radius: 5px;
             align-items: center; 
@@ -344,7 +339,7 @@ fieldset div {
                 }
 
                 .boton-eliminar {
-                    background-color: red;
+                    background-color: $secondary-color;
                     color: white;
                     border: none;
                     padding: 5px 10px;
@@ -352,7 +347,7 @@ fieldset div {
                     cursor: pointer;
 
                     &:hover {
-                        background-color: darkred;
+                        background-color: $primary-color;
                     }
                 }
             }
@@ -429,7 +424,7 @@ fieldset div {
         padding: 10px;
 
         .titulo-carrito {
-            font-size: 1.5rem; // Más pequeño en móviles
+            font-size: 1.5rem; 
         }
 
         .productos-carrito {

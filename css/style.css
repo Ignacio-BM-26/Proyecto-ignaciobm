@@ -96,11 +96,13 @@ header .scroll-link a:hover {
 }
 
 footer {
+  color: #344E41;
   background-color: #dad7cd;
   text-align: center;
   font-weight: lighter;
+  font-size: 1rem;
   padding: 20px;
-  border-top: 2px solid lightcyan;
+  border-top: 2px solid #3A5A40;
 }
 
 a {
@@ -117,20 +119,21 @@ a:hover {
   text-align: center;
   font-size: 2.5rem;
   color: #344E41;
-  border-bottom: 2px solid aqua;
+  border-bottom: 2px solid #588157;
   padding-bottom: 10px;
 }
 
 .contenedor-descripcion {
-  background-color: #A3B18A;
+  background-color: #dad7cd;
 }
 
 .descripcion-nos {
+  background-color: #A3B18A;
   width: 80%;
   display: grid;
   place-items: center;
   margin: 40px auto;
-  border: 2px solid #3A5A40;
+  border: 2px solid #588157;
   border-radius: 10px;
   padding: 20px;
   color: #344E41;
@@ -190,7 +193,7 @@ a:hover {
 .main-contactos form fieldset input[type=reset] {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #A3B18A;
+  background-color: #588157;
   color: #A3B18A;
   border: none;
   border-radius: 5px;
@@ -222,6 +225,7 @@ fieldset div {
 }
 .main-prod .recomendados-prod {
   text-align: left;
+  color: #344E41;
 }
 .main-prod .contenedordeimagenes {
   background-color: #A3B18A;
@@ -397,7 +401,7 @@ fieldset div {
   text-align: center;
   font-size: 2.5rem;
   color: #344E41;
-  border-bottom: 2px solid aqua;
+  border-bottom: 2px solid #3A5A40;
   padding-bottom: 10px;
 }
 @media (max-width: 768px) {
@@ -412,21 +416,17 @@ fieldset div {
 }
 
 .descripcion-nos {
-  background-color: rgb(34, 34, 34);
+  background-color: #A3B18A;
   width: 80%;
   display: grid;
   place-items: center;
   margin: 40px auto;
-  border: 2px solid aqua;
+  border: 2px solid #3A5A40;
   border-radius: 10px;
   padding: 20px;
   color: #344E41;
   line-height: 1.6;
   font-size: 1.2rem;
-}
-.descripcion-nos:hover {
-  background-color: rgb(45, 45, 45);
-  transition: background-color 0.3s;
 }
 @media (max-width: 768px) {
   .descripcion-nos {
@@ -501,15 +501,16 @@ fieldset div {
   align-items: center;
   margin: 50px auto;
   width: 50%;
-  background-color: #333030;
+  background-color: #A3B18A;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
 }
 .main-contactos h2 {
   margin-bottom: 20px;
   font-size: 24px;
   text-align: center;
-  color: lightcyan;
+  color: #344E41;
 }
 .main-contactos form {
   width: 100%;
@@ -547,7 +548,7 @@ fieldset div {
 .main-contactos form fieldset input[type=reset] {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #A3B18A;
+  background-color: #588157;
   color: white;
   border: none;
   border-radius: 5px;
@@ -608,7 +609,7 @@ fieldset div {
 }
 .carrito .productos-carrito .producto {
   display: flex;
-  background-color: rgb(59, 56, 56);
+  background-color: #A3B18A;
   padding: 15px;
   border-radius: 5px;
   align-items: center;
@@ -636,7 +637,7 @@ fieldset div {
   margin-right: 10px;
 }
 .carrito .productos-carrito .producto .detalle-producto .boton-eliminar {
-  background-color: red;
+  background-color: #3A5A40;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -644,7 +645,7 @@ fieldset div {
   cursor: pointer;
 }
 .carrito .productos-carrito .producto .detalle-producto .boton-eliminar:hover {
-  background-color: darkred;
+  background-color: #A3B18A;
 }
 .carrito .total-carrito {
   display: flex;

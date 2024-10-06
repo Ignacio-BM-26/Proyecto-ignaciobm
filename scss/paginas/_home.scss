@@ -107,11 +107,13 @@ header {
 //estilos footer
 
 footer {
+    color: $text-color;
     background-color: $background-color; 
     text-align: center;
     font-weight: lighter;
+    font-size: 1rem;
     padding: 20px;
-    border-top: 2px solid lightcyan;}
+    border-top: 2px solid #3A5A40;}
     
     // Estilos para los enlaces dentro del footer
     a {
