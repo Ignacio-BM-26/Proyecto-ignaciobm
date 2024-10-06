@@ -5,7 +5,7 @@
     align-items: center;
     margin: 50px auto;
     width: 50%;
-    background-color: #333030;
+    background-color: $primary-color;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
@@ -13,7 +13,7 @@
         margin-bottom: 20px;
         font-size: 24px;
         text-align: center;
-        color: lightcyan;
+        color: $text-color;
     }
 
     form {

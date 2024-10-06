@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #212121ff;
+    background-color: $background-color;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     .logo-container {
@@ -35,7 +35,7 @@ header {
         a {
             padding: 10px;
             font-size: 14px;
-            color: lightcyan;
+            color: $text-color;
 
             &:hover {
                 color: $primary-color;
@@ -45,16 +45,18 @@ header {
 }
 
 .main-index {
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $background-color;
     padding: $padding-base;
 
     // Título principal centrado
     .titulo-principal {
         text-align: center;
+        padding: 1rem;
         font-size: 3rem; 
-        margin-bottom: 20px;
         color: $text-color;
     }
 
@@ -97,6 +99,7 @@ header {
                 height: auto;
                 filter: grayscale(10%) brightness(0.8);
                 margin-bottom: 10px;
+                border-radius: 10%;
             }
         }
     }

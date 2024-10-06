@@ -1,11 +1,24 @@
 
 // Estilos Imágenes de Productos 
    .main-prod {
+    margin-top: 8px;
+    background-color: $background-color;
     text-align: center;
     padding: 20px;
 
+    .titulo-prod {
+        text-align: center;
+        padding: 1rem;
+        font-size: 3rem; 
+        color: $text-color;
+    }
+
+    .recomendados-prod {
+        text-align: left;
+    }
+
     .contenedordeimagenes {
-        background-color: $background-color;
+        background-color: $primary-color;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -20,8 +33,10 @@
 
             img {
                 max-width: 80%;
+                border-radius: 10%;
                 height: auto;
-                margin-bottom: 8%; 
+                margin-bottom: 8%;
+                opacity: 85%;
             }
 
             h2 {

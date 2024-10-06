@@ -9,8 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #212121;
-  color: lightcyan;
+  background-color: #dad7cd;
 }
 
 header {
@@ -18,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #212121;
+  background-color: #dad7cd;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 header .logo-container {
@@ -32,38 +31,40 @@ header .navbar li {
   margin-left: 20px;
 }
 header .navbar li a {
-  color: lightcyan;
+  color: #344E41;
   font-weight: bold;
 }
 header .navbar li a:hover {
-  color: #007BFF;
+  color: #A3B18A;
 }
 header .scroll-link a {
   padding: 10px;
   font-size: 14px;
-  color: lightcyan;
+  color: #344E41;
 }
 header .scroll-link a:hover {
-  color: #007BFF;
+  color: #A3B18A;
 }
 
 .main-index {
+  margin-top: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #dad7cd;
   padding: 20px;
 }
 .main-index .titulo-principal {
   text-align: center;
+  padding: 1rem;
   font-size: 3rem;
-  margin-bottom: 20px;
-  color: lightcyan;
+  color: #344E41;
 }
 .main-index .descripcion-inicial {
   text-align: center;
   font-size: 1.6rem;
   font-style: italic;
-  color: lightcyan;
+  color: #344E41;
   margin-bottom: 40px;
   width: 80%;
 }
@@ -84,17 +85,18 @@ header .scroll-link a:hover {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: lightcyan;
+  color: #344E41;
 }
 .main-index .contenido .columna-remeras img, .main-index .contenido .columna-gorras img {
   max-width: 80%;
   height: auto;
   filter: grayscale(10%) brightness(0.8);
   margin-bottom: 10px;
+  border-radius: 10%;
 }
 
 footer {
-  background-color: #212121;
+  background-color: #dad7cd;
   text-align: center;
   font-weight: lighter;
   padding: 20px;
@@ -102,11 +104,11 @@ footer {
 }
 
 a {
-  color: lightcyan;
+  color: #344E41;
   text-decoration: none;
 }
 a:hover {
-  color: #007BFF;
+  color: #A3B18A;
   text-decoration: underline;
 }
 
@@ -114,27 +116,26 @@ a:hover {
   margin: 20px;
   text-align: center;
   font-size: 2.5rem;
-  color: lightcyan;
+  color: #344E41;
   border-bottom: 2px solid aqua;
   padding-bottom: 10px;
 }
 
+.contenedor-descripcion {
+  background-color: #A3B18A;
+}
+
 .descripcion-nos {
-  background-color: rgb(34, 34, 34);
   width: 80%;
   display: grid;
   place-items: center;
   margin: 40px auto;
-  border: 2px solid aqua;
+  border: 2px solid #3A5A40;
   border-radius: 10px;
   padding: 20px;
-  color: lightcyan;
+  color: #344E41;
   line-height: 1.6;
   font-size: 1.2rem;
-}
-.descripcion-nos:hover {
-  background-color: rgb(45, 45, 45);
-  transition: background-color 0.3s;
 }
 
 .main-contactos {
@@ -143,7 +144,7 @@ a:hover {
   align-items: center;
   margin: 50px auto;
   width: 50%;
-  background-color: #333030;
+  background-color: #A3B18A;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -151,7 +152,7 @@ a:hover {
   margin-bottom: 20px;
   font-size: 24px;
   text-align: center;
-  color: lightcyan;
+  color: #344E41;
 }
 .main-contactos form {
   width: 100%;
@@ -170,7 +171,7 @@ a:hover {
   display: block;
   font-size: 16px;
   margin-bottom: 5px;
-  color: lightcyan;
+  color: #344E41;
 }
 .main-contactos form fieldset input[type=text],
 .main-contactos form fieldset input[type=email],
@@ -189,15 +190,15 @@ a:hover {
 .main-contactos form fieldset input[type=reset] {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007BFF;
-  color: #007BFF;
+  background-color: #A3B18A;
+  color: #A3B18A;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 .main-contactos form fieldset input[type=submit]:hover,
 .main-contactos form fieldset input[type=reset]:hover {
-  background-color: #0056b3;
+  background-color: #3A5A40;
 }
 .main-contactos form fieldset input[type=submit] {
   margin-right: 10px;
@@ -208,11 +209,22 @@ fieldset div {
 }
 
 .main-prod {
+  margin-top: 8px;
+  background-color: #dad7cd;
   text-align: center;
   padding: 20px;
 }
+.main-prod .titulo-prod {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  color: #344E41;
+}
+.main-prod .recomendados-prod {
+  text-align: left;
+}
 .main-prod .contenedordeimagenes {
-  background-color: #212121;
+  background-color: #A3B18A;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -227,18 +239,20 @@ fieldset div {
 }
 .main-prod .contenedordeimagenes div img {
   max-width: 80%;
+  border-radius: 10%;
   height: auto;
   margin-bottom: 8%;
+  opacity: 85%;
 }
 .main-prod .contenedordeimagenes div h2 {
   margin-top: 10px;
-  color: lightcyan;
+  color: #344E41;
   text-align: center;
 }
 .main-prod .contenedordeimagenes div .agregar-carrito {
   margin-top: 8px;
   padding: 10px 15px;
-  background-color: #007BFF;
+  background-color: #A3B18A;
   color: white;
   border: none;
   border-radius: 5px;
@@ -251,15 +265,15 @@ fieldset div {
 
 .carrito {
   padding: 20px;
-  background-color: #212121;
-  color: lightcyan;
+  background-color: #dad7cd;
+  color: #344E41;
   border-radius: 5px;
 }
 .carrito .titulo-carrito {
   text-align: center;
   margin-bottom: 10px;
   font-size: 2rem;
-  color: lightcyan;
+  color: #344E41;
 }
 .carrito .productos-carrito {
   display: flex;
@@ -268,7 +282,7 @@ fieldset div {
 }
 .carrito .productos-carrito .producto {
   display: flex;
-  background-color: rgb(59, 56, 56);
+  background-color: #3A5A40;
   padding: 15px;
   border-radius: 5px;
   align-items: center;
@@ -322,7 +336,7 @@ fieldset div {
   margin-right: 20px;
 }
 .total-carrito .boton-finalizar {
-  background-color: #007BFF;
+  background-color: #A3B18A;
   color: white;
   border: none;
   padding: 10px;
@@ -330,7 +344,7 @@ fieldset div {
   cursor: pointer;
 }
 .total-carrito .boton-finalizar:hover {
-  background-color: #0056b3;
+  background-color: #3A5A40;
 }
 
 @media (max-width: 768px) {
@@ -382,7 +396,7 @@ fieldset div {
   margin: 20px;
   text-align: center;
   font-size: 2.5rem;
-  color: lightcyan;
+  color: #344E41;
   border-bottom: 2px solid aqua;
   padding-bottom: 10px;
 }
@@ -406,7 +420,7 @@ fieldset div {
   border: 2px solid aqua;
   border-radius: 10px;
   padding: 20px;
-  color: lightcyan;
+  color: #344E41;
   line-height: 1.6;
   font-size: 1.2rem;
 }
@@ -432,7 +446,7 @@ fieldset div {
   padding: 20px;
 }
 .main-prod .contenedordeimagenes {
-  background-color: #212121;
+  background-color: #dad7cd;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -452,13 +466,13 @@ fieldset div {
 }
 .main-prod .contenedordeimagenes div h2 {
   margin-top: 10px;
-  color: lightcyan;
+  color: #344E41;
   text-align: center;
 }
 .main-prod .contenedordeimagenes div .agregar-carrito {
   margin-top: 8px;
   padding: 10px 15px;
-  background-color: #007BFF;
+  background-color: #A3B18A;
   color: white;
   border: none;
   border-radius: 5px;
@@ -514,7 +528,7 @@ fieldset div {
   display: block;
   font-size: 16px;
   margin-bottom: 5px;
-  color: lightcyan;
+  color: #344E41;
 }
 .main-contactos form fieldset input[type=text],
 .main-contactos form fieldset input[type=email],
@@ -533,7 +547,7 @@ fieldset div {
 .main-contactos form fieldset input[type=reset] {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #A3B18A;
   color: white;
   border: none;
   border-radius: 5px;
@@ -541,7 +555,7 @@ fieldset div {
 }
 .main-contactos form fieldset input[type=submit]:hover,
 .main-contactos form fieldset input[type=reset]:hover {
-  background-color: #0056b3;
+  background-color: #3A5A40;
 }
 .main-contactos form fieldset input[type=submit] {
   margin-right: 10px;
@@ -577,15 +591,15 @@ fieldset div {
 }
 .carrito {
   padding: 20px;
-  background-color: #212121;
-  color: lightcyan;
+  background-color: #dad7cd;
+  color: #344E41;
   border-radius: 10px;
 }
 .carrito .titulo-carrito {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: lightcyan;
+  color: #344E41;
 }
 .carrito .productos-carrito {
   display: flex;
@@ -647,7 +661,7 @@ fieldset div {
   margin-right: 20px;
 }
 .carrito .total-carrito .boton-finalizar {
-  background-color: #007BFF;
+  background-color: #A3B18A;
   color: white;
   border: none;
   padding: 10px;
@@ -655,7 +669,7 @@ fieldset div {
   cursor: pointer;
 }
 .carrito .total-carrito .boton-finalizar:hover {
-  background-color: #0056b3;
+  background-color: #3A5A40;
 }
 @media (max-width: 768px) {
   .carrito {
