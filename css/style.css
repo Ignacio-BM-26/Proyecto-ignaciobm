@@ -211,6 +211,19 @@ fieldset div {
   text-align: center;
 }
 
+.text-center, .main-prod .contenedordeimagenes div h2, .main-prod .recomendados-prod, .main-prod .titulo-prod {
+  text-align: center;
+  color: #344E41;
+}
+
+.btn, .main-prod .contenedordeimagenes div .agregar-carrito {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
 .main-prod {
   margin-top: 8px;
   background-color: #dad7cd;
@@ -218,14 +231,11 @@ fieldset div {
   padding: 20px;
 }
 .main-prod .titulo-prod {
-  text-align: center;
   padding: 1rem;
   font-size: 3rem;
-  color: #344E41;
 }
 .main-prod .recomendados-prod {
   text-align: left;
-  color: #344E41;
 }
 .main-prod .contenedordeimagenes {
   background-color: #A3B18A;
@@ -250,21 +260,14 @@ fieldset div {
 }
 .main-prod .contenedordeimagenes div h2 {
   margin-top: 10px;
-  color: #344E41;
-  text-align: center;
 }
 .main-prod .contenedordeimagenes div .agregar-carrito {
   margin-top: 8px;
-  padding: 10px 15px;
   background-color: #A3B18A;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 .main-prod .contenedordeimagenes div .agregar-carrito:hover {
   background-color: rgb(138.9384615385, 156.6, 107.4);
-  color: #000;
+  color: #3A5A40;
 }
 
 .main-carrito {

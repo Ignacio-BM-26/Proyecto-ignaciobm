@@ -1,21 +1,36 @@
 
 // Estilos Imágenes de Productos 
-   .main-prod {
+// Clase base para títulos o textos comunes
+.text-center {
+    text-align: center;
+    color: $text-color;
+}
+
+// Clase base para botones comunes
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+// Aplicar extend en tu código
+.main-prod {
     margin-top: 8px;
     background-color: $background-color;
     text-align: center;
     padding: 20px;
 
     .titulo-prod {
-        text-align: center;
+        @extend .text-center;
         padding: 1rem;
-        font-size: 3rem; 
-        color: $text-color;
+        font-size: 3rem;
     }
 
     .recomendados-prod {
-        text-align: left;
-        color: $text-color;
+        @extend .text-center; // Reutilizamos la clase .text-center
+        text-align: left; // Sobrescribimos el align si es necesario
     }
 
     .contenedordeimagenes {
@@ -42,27 +57,22 @@
 
             h2 {
                 margin-top: 10px;
-                color: $text-color;
-                text-align: center;
-                
+                @extend .text-center; // Aplicamos la clase centralizada
             }
+
             .agregar-carrito {
                 margin-top: 8px;
-                padding: 10px 15px;
                 background-color: $primary-color;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            
-                &:hover {
-                    background-color: darken($primary-color, 10%); // Oscurece el color al pasar el cursor
-                    color: #000; // Cambia el color del texto
-                }
-            }            
+                @extend .btn; // Reutilizamos la clase base btn
                 
+                &:hover {
+                    background-color: darken($primary-color, 10%);
+                    color: $secondary-color;
+                }
+            }
         }
     }
 }
+
 
 
