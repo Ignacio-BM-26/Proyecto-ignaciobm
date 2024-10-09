@@ -151,6 +151,12 @@ a:hover {
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+.main-contactos .titulo-contacto {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  color: #344E41;
+}
 .main-contactos h2 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -167,8 +173,8 @@ a:hover {
 .main-contactos form fieldset .input-nombre,
 .main-contactos form fieldset .input-email,
 .main-contactos form fieldset .cuadro-texto {
-  margin-bottom: 20px;
-  width: 100%;
+  margin-bottom: 10px;
+  width: 80%;
 }
 .main-contactos form fieldset label {
   display: block;
@@ -179,7 +185,7 @@ a:hover {
 .main-contactos form fieldset input[type=text],
 .main-contactos form fieldset input[type=email],
 .main-contactos form fieldset textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   font-size: 14px;
   border: 1px solid #ccc;
