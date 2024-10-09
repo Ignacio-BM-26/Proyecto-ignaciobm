@@ -141,14 +141,13 @@ header {
                 margin-top: 8px;
                 padding: 10px 15px;
                 background-color: $primary-color;
-                color: $text-color;
+                color: white;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
 
                 &:hover {
-                    background-color: darken($secondary-color, 30%); // Oscurece el color al pasar el cursor
-                    color: #000; // Cambia el color del texto
+                    background-color: darken($secondary-color, 10%); // Oscurece el color al pasar el cursor
                 }
             }
         }

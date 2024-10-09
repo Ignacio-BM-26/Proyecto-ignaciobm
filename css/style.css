@@ -257,6 +257,10 @@ fieldset div {
   height: auto;
   margin-bottom: 8%;
   opacity: 85%;
+  transition: transform 0.3 ease;
+}
+.main-prod .contenedordeimagenes div img:hover {
+  transform: scale(1.05);
 }
 .main-prod .contenedordeimagenes div h2 {
   margin-top: 10px;
@@ -266,8 +270,7 @@ fieldset div {
   background-color: #A3B18A;
 }
 .main-prod .contenedordeimagenes div .agregar-carrito:hover {
-  background-color: rgb(138.9384615385, 156.6, 107.4);
-  color: #3A5A40;
+  background-color: rgb(38.0135135135, 58.9864864865, 41.9459459459);
 }
 
 .main-carrito {
@@ -480,14 +483,13 @@ fieldset div {
   margin-top: 8px;
   padding: 10px 15px;
   background-color: #A3B18A;
-  color: #344E41;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 .main-prod .contenedordeimagenes div .agregar-carrito:hover {
-  background-color: black;
-  color: #000;
+  background-color: rgb(38.0135135135, 58.9864864865, 41.9459459459);
 }
 @media (max-width: 768px) {
   .main-prod .contenedordeimagenes div {
