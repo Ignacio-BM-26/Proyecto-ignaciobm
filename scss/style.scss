@@ -1,36 +1,45 @@
+@use "sass:color";
+@use "variables";
 
+// =============================
+// Variables Globales
+// =============================
+$primary-color: variables.$primary-color;
+$secondary-color: variables.$secondary-color;
+$link-hover-color: variables.$link-hover-color;
+$font-family: variables.$font-family;
+$header-bg-color: variables.$header-bg-color;
 
-// Variables
-$primary-color: rgb(23, 46, 68);
-$secondary-color: lightcyan;
-$link-hover-color: #007BFF;
-$font-family: "Roboto", sans-serif;
-$header-bg-color: #212121ff;
-
+// =============================
 // Mixin para sombra corregido
+// =============================
 @mixin box-shadow($x, $y, $blur, $alpha: 1) {
   box-shadow: $x $y $blur rgba(
-    color.channel($primary-color, "red"), 
-    color.channel($primary-color, "green"), 
-    color.channel($primary-color, "blue"), 
+    color.red($primary-color), 
+    color.green($primary-color), 
+    color.blue($primary-color), 
     $alpha
   );
 }
 
-// Estilos generales
-body {
-  font-family: "Roboto", sans-serif;
+// =============================
+// Reset y estilos generales
+// =============================
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
   background-color: $primary-color;
-  color: lightcyan;
+  color: $secondary-color;
 }
 
 // =============================
 // Header
 // =============================
-
 header {
   display: flex;
   justify-content: space-between;
@@ -49,6 +58,13 @@ header {
   }
 
   .navbar {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
     li {
       margin-left: 20px;
     }
@@ -56,6 +72,7 @@ header {
     a {
       color: $secondary-color;
       font-weight: bold;
+      text-decoration: none;
 
       &:hover {
         color: $link-hover-color;
@@ -68,6 +85,7 @@ header {
       padding: 10px;
       font-size: 14px;
       color: $secondary-color;
+      text-decoration: none;
 
       &:hover {
         color: $link-hover-color;
@@ -76,12 +94,15 @@ header {
   }
 }
 
+// =============================
+// Estilos Main (Página principal)
+// =============================
 .main-index {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 50px;
-  gap: 20px; // Espacio entre el contenido
+  gap: 20px;
   margin-top: 10px;
 
   .titulo-principal {
@@ -89,25 +110,29 @@ header {
     margin-bottom: 30px;
     text-align: center;
     font-size: 2.5rem;
-    color: lightcyan;
+    color: $secondary-color;
   }
 
   .contenido {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    gap: 10px; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     padding: 10px;
 
     @media (max-width: 768px) {
-      flex-direction: column; 
+      flex-direction: column;
     }
 
     // Ajustes para la imagen
     .primerimagen img {
-      max-width: 25%; 
-      height: auto; 
-      border-radius: 10px; 
+      max-width: 25%;
+      height: auto;
+      border-radius: 10px;
+
+      @media (max-width: 768px) {
+        max-width: 80%;
+      }
     }
 
     // Ajustes para el texto de descripción
@@ -115,12 +140,16 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: left; 
-      line-height: 1.8; 
-      max-width: 50%; 
-      color: lightcyan;
+      text-align: left;
+      line-height: 1.8;
+      max-width: 50%;
+      color: $secondary-color;
       font-size: 1.2rem;
+
+      @media (max-width: 768px) {
+        max-width: 90%;
+        text-align: center;
+      }
     }
   }
 }
-

@@ -1,10 +1,10 @@
 /* Error: There is no module with the namespace "color".
  *    ,
- * 13 |     color.channel($primary-color, "red"), 
+ * 12 |     color.channel($primary-color, "red"), 
  *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   scss\style.scss 13:5  box-shadow()
- *   scss\style.scss 40:3  root stylesheet */
+ *   scss\style.scss 12:5  box-shadow()
+ *   scss\style.scss 39:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "color".\a    \2577 \a 13 \2502      color.channel($primary-color, "red"), \d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\style.scss 13:5  box-shadow()\a   scss\\style.scss 40:3  root stylesheet';
+  content: 'Error: There is no module with the namespace "color".\a    \2577 \a 12 \2502      color.channel($primary-color, "red"), \d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\style.scss 12:5  box-shadow()\a   scss\\style.scss 39:3  root stylesheet';
 }
