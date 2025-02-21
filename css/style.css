@@ -46,7 +46,7 @@ header .scroll-link a {
   text-decoration: none;
 }
 header .scroll-link a:hover {
-  color: #333;
+  color: #ffffff;
 }
 
 .main-index {
@@ -96,7 +96,7 @@ header .scroll-link a:hover {
   text-align: left;
   line-height: 1.8;
   max-width: 50%;
-  color: #333;
+  color: #ffffff;
   font-size: 1.2rem;
 }
 @media (max-width: 768px) {
@@ -104,6 +104,4 @@ header .scroll-link a:hover {
     max-width: 90%;
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
