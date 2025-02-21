@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 * {
   box-sizing: border-box;
@@ -22,7 +23,7 @@ header .logo-container {
   flex: 1;
 }
 header .logo-container img {
-  width: 100px;
+  width: 50px;
   height: auto;
 }
 header .navbar ul {
@@ -50,46 +51,55 @@ header .scroll-link a:hover {
 }
 
 .main-index {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  position: relative; /* Necesario para que los elementos hijos con `absolute` se posicionen correctamente */
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 50px;
   gap: 20px;
   margin-top: 10px;
-  background-color: #506b9b;
 }
-.main-index .titulo-principal {
-  position: absolute;
+
+.titulo-principal {
+  display: flexbox;
+  top: 0; /* Pone el título en la parte superior */
   text-decoration: underline;
   margin-bottom: 30px;
   text-align: center;
   font-size: 2.5rem;
   color: #c8d4e4;
+  background-color: #03273f;
 }
-.main-index .contenido {
+
+.contenido {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   gap: 10px;
   margin-top: 20px;
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .main-index .contenido {
+  .contenido {
     flex-direction: column;
   }
 }
-.main-index .contenido .primerimagen img {
-  max-width: 25%;
-  height: auto;
-  border-radius: 10px;
+.contenido .primerimagen img {
+  max-width: 40%;
+}
+@media (max-width: 1024px) {
+  .contenido .primerimagen img {
+    max-width: 50%;
+  }
 }
 @media (max-width: 768px) {
-  .main-index .contenido .primerimagen img {
+  .contenido .primerimagen img {
     max-width: 80%;
   }
 }
-.main-index .contenido .descripcion-principal {
+.contenido .descripcion-principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +110,7 @@ header .scroll-link a:hover {
   font-size: 1.2rem;
 }
 @media (max-width: 768px) {
-  .main-index .contenido .descripcion-principal {
+  .contenido .descripcion-principal {
     max-width: 90%;
     text-align: center;
   }

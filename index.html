@@ -3,91 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre las mejores gorras, viseras y remeras oversize en The Urban Clothes. Estilo único y comodidad para todos.">
     
-    <!-- link de tipografia -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!--link BT-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <!-- link de css -->
-    <link rel="stylesheet" href="scss/style.css">
-    <title>Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Inicio - The Urban Clothes</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <header>
-         <!-- imagen logo -->
-         <div class="logo-container">
-            <img src="./img/alta-pinta (2).png" alt="Logo">
+    <header class="d-flex justify-content-between align-items-center p-3 bg-dark">
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="./index.html">
+                <img src="./img/alta-pinta (2).png" alt="Logo The Urban Clothes" class="img-fluid" style="width: 60px;">
+            </a>
         </div>
-        <!-- barra de navegacion -->
+        <!-- Navegación -->
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-color-white"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/productos.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/contactos.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/carrito.html">Carrito</a>
-                </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="./pages/productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="./pages/contactos.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="./pages/carrito.html">Carrito</a></li>
                 </ul>
             </div>
-            </div>
         </nav>
-        
-        <!-- boton ir abajo-->
-        <div class="scroll-link">
-            <a href="#footer">Ir abajo</a>
-        </div>
     </header>
     
-    <main class="main-index">
+    <main class="container text-center py-5">
         <h1 class="titulo-principal">Explora tu estilo único</h1>
+        <p class="subtitulo">Estilo, comodidad y calidad en un solo lugar. ¡Elegí el tuyo hoy!</p>
         
-        <div class="contenido">
-          <div class="primerimagen">
-            <img src="img/Gorra-vintagerosa.jpg" alt="Gorra-vintagerosa">
-          </div>
-          <div class="descripcion-principal">
-            <h2>Gorras y viseras</h2>
-            <p>Protege tu estilo bajo el sol...</p>
-          </div>
+        <div class="row align-items-center py-4">
+            <div class="col-md-6">
+                <img src="img/Gorra-vintagerosa.jpg" alt="Gorra vintage rosa" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2>Gorras y viseras</h2>
+                <p>Protege tu estilo bajo el sol con nuestra colección de gorras y viseras diseñadas para cada ocasión.</p>
+            </div>
         </div>
       
-        <div class="contenido">
-          <div class="primerimagen">
-            <img src="./img/remera-oversize-clara.jpg" alt="remera oversize">
-          </div>
-          <div class="descripcion-principal">
-            <h3>¡No te quedes sin la tuya!</h3>
-            <p>Compra ahora y recibe en la puerta de tu casa...</p>
-          </div>
+        <div class="row align-items-center py-4">
+            <div class="col-md-6 order-md-2">
+                <img src="./img/remera-oversize-clara.jpg" alt="Remera oversize clara" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2>¡No te quedes sin la tuya!</h2>
+                <p>Luce con confianza, viste con actitud. Nuestra colección te espera.</p>
+            </div>
         </div>
-      </main>
-      
-
-<footer id="footer">
-    <p> Todos los derechos reservados</p>
-    <a href="https://www.instagram.com/ignacio.barrionuevo26/" target="_blank">
-        Ir a mi insta
-    </a>
-</footer>
-
- <!--link js-->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </main>
+    
+    <footer class="bg-dark text-light text-center py-3">
+        <nav>
+            <ul class="list-unstyled d-flex justify-content-center mb-2">
+                <li class="mx-3"><a class="text-light" href="./index.html">Inicio</a></li>
+                <li class="mx-3"><a class="text-light" href="./pages/productos.html">Productos</a></li>
+                <li class="mx-3"><a class="text-light" href="./pages/nosotros.html">Nosotros</a></li>
+                <li class="mx-3"><a class="text-light" href="./pages/contactos.html">Contacto</a></li>
+                <li class="mx-3"><a class="text-light" href="./pages/carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+        <p class="mb-0">&copy; 2025 The Urban Clothes - Todos los derechos reservados</p>
+        <a href="https://www.instagram.com/ignacio.barrionuevo26/" target="_blank" class="text-light">Síguenos en Instagram</a>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
