@@ -1,6 +1,4 @@
-@import 'variables';
-@import 'responsive';
-
+@charset "UTF-8";
 /* Reset y estilos generales */
 * {
   margin: 0;
@@ -9,9 +7,9 @@
 }
 
 body {
-  font-family: $font-stack;
+  font-family: "Poppins", sans-serif;
   background-color: #03273f;
-  color: $secondary-color;
+  color: #b6bcd6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,14 +22,14 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: $spacing;
+  padding: 20px;
   text-align: center;
 }
 
 /* Estilos de encabezados */
 h2 {
   font-size: 2rem;
-  margin-bottom: $spacing;
+  margin-bottom: 20px;
   color: #b6bcd6;
 }
 
@@ -40,12 +38,11 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: $spacing;
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+  gap: 20px;
 }
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=style.css.map */
