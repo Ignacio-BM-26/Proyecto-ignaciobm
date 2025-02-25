@@ -1,5 +1,7 @@
-@import 'variables';
-@import 'responsive';
+@use 'variables';
+@use 'productos';
+@use 'responsive';
+@use "sass:math";
 
 /* Reset y estilos generales */
 * {
@@ -9,9 +11,9 @@
 }
 
 body {
-  font-family: $font-stack;
-  background-color: #03273f;
-  color: $secondary-color;
+  font-family: variables.$font-family;
+  background-color: variables.$primary-color;
+  color: variables.$secondary-color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +26,15 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: $spacing;
+  padding: variables.$spacing;
   text-align: center;
 }
 
 /* Estilos de encabezados */
 h2 {
   font-size: 2rem;
-  margin-bottom: $spacing;
-  color: #b6bcd6;
+  margin-bottom: variables.$spacing;
+  color: variables.$text-color;
 }
 
 /* Estilos de imágenes */
@@ -40,7 +42,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: $spacing;
+  gap: variables.$spacing;
   
   img {
     max-width: 100%;
@@ -49,3 +51,4 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
+

@@ -1,0 +1,12 @@
+
+/* Responsividad index */
+@media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .img-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
